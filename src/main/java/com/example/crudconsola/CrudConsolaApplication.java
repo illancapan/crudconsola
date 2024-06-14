@@ -4,10 +4,11 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CrudconsolaApplication {
+public class CrudConsolaApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CrudconsolaApplication.class, args);
+
+		SpringApplication.run(CrudConsolaApplication.class, args);
 	}
 
 }
