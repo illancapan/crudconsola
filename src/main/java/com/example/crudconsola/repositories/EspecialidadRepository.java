@@ -15,7 +15,8 @@ public interface EspecialidadRepository extends
     List<Especialidad> getEspecialidades();
 
     // Consulta para obtener una especialidad por su ID
-    @Query("select esp from Especialidad esp where esp.id_especialidad = :id")
+    //@Query("select esp from Especialidad esp where esp.id_especialidad = :id")
+    @Query("select esp from Especialidad esp where esp.id_especialidad in ?1 ")
     Optional<Especialidad> getEspecialidadPorId(@Param("id") Integer id);
 
 }
